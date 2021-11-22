@@ -28,7 +28,7 @@ requirements:
     - hdf5
     - zlib
     - spdlog >=1.9.0
-    - nlohmann_json
+    - nlohmann_json <=3.10.3
     - pybind11
     - blosc
     - fmt
