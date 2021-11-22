@@ -1,5 +1,5 @@
 {% set name = "readdy" %}
-{% set version = "2.0.9" %}
+{% set version = "2.0.10" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0d4474d545837e3c7afc3f2a98ca21da1e2cc46691149db8ca03b05dd9d49028
+  sha256: eda816e9500c59372fb17e5bdef7257b5e577b26372ea0ad5eb49ce0b3b9071a
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   rpaths:
     - lib/
