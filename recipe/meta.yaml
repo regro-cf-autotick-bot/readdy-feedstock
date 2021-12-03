@@ -1,5 +1,5 @@
 {% set name = "readdy" %}
-{% set version = "2.0.9" %}
+{% set version = "2.0.11" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0d4474d545837e3c7afc3f2a98ca21da1e2cc46691149db8ca03b05dd9d49028
+  sha256: 1e72b6dd52fb7b62cb8ca14c3426814e25d2eca50f4ea8b43259c354b1d6d375
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   rpaths:
     - lib/
@@ -28,7 +28,7 @@ requirements:
     - hdf5
     - zlib
     - spdlog >=1.9.0
-    - nlohmann_json
+    - nlohmann_json <=3.10.3
     - pybind11
     - blosc
     - fmt
